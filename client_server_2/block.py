@@ -8,7 +8,7 @@ from urllib.parse import urlparse
 
 # Building a Blockchain
 
-class Blockchain:
+class Block:
 
     def __init__(self):
         self.chain = []

@@ -1,7 +1,7 @@
 from flask import Flask
 
-UPLOAD_FOLDER = '/home/admin/projects/fun/college-project/main_server/uploads'
-DOWNLOAD_FOLDER = '/home/admin/projects/fun/college-project/main_server/downloads'
+UPLOAD_FOLDER = '/Users/admin/projects/7th-semester-project/main_server/uploads'
+DOWNLOAD_FOLDER = '/Users/admin/projects/7th-semester-project/main_server/downloads'
 
 app = Flask(__name__)
 app.secret_key = "secret key"

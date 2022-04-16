@@ -8,5 +8,10 @@ main_server/uploads
 main_server/downloads
 client_server_1/uploads
 client_server_1/downloads
+client_server_2/uploads
+client_server_2/downloads
+client_server_3/uploads
+client_server_3/downloads
 
 blockChain/
+storage/

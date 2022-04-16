@@ -8,7 +8,7 @@ from werkzeug.utils import secure_filename
 from flask_socketio import SocketIO, send, emit
 import socket
 import pickle
-from blockchain import Blockchain
+from block import Block
 import requests
 import socketio
 
@@ -20,7 +20,7 @@ sio = socketio.Client()
 client_ip = app.config['NODE_ADDR']
 connection_status = False
 
-blockchain = Blockchain()
+blockchain = Block()
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']

@@ -8,7 +8,7 @@ from flask_socketio import SocketIO, send, emit
 from werkzeug.utils import secure_filename
 import socket
 import pickle
-from blockchain import Blockchain
+from block import Block
 import requests
 
 # The package requests is used in the 'hash_user_file' and 'retrieve_from hash' functions to send http post requests.
@@ -16,7 +16,7 @@ import requests
 # 'request' package is used in the 'add_file' function for multiple actions.
 
 socketio = SocketIO(app)
-blockchain = Blockchain()
+blockchain = Block()
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
@@ -198,4 +198,4 @@ def handle_disconnect():
     print(request)
 
 if __name__ == '__main__':
-    socketio.run(app, host = '127.0.0.1', port= 5111)
+    socketio.run(app, host = '0.0.0.0', port= 5111)
