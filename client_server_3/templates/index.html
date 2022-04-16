@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Data Share</title>
+    <title>Decentralized Storage System</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
@@ -31,18 +31,13 @@
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
 
-        <h1 class="logo mr-auto"><a href="index.html">Data Share</a></h1>
+        <h1 class="logo mr-auto"><a  href="{{ url_for('home') }}">Distributed Storage System</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo mr-auto"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
             <li class="active"><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#featured-services">Services</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-
           </ul>
         </nav><!-- .nav-menu -->
 
@@ -54,16 +49,16 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1>Blockchain Based File Sharing</h1>
-            <h2> Share files securely using a blockchain network</h2>
-            <div class="d-flex">
+          <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center">
+            <h1>Distributed Storage System</h1>
+            <h2 class="pl-3">Store and Share files securely using a distributed system </h2>
+            <!-- <div class="d-flex">
               <a href="#about" class="btn-get-started scrollto">Get Started</a>
               <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Demo <i class="icofont-play-alt-2"></i></a>
-            </div>
+            </div> -->
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="static/img/hero-img.png" class="img-fluid animated" alt="">
+          <div class="col-lg-5 order-1 order-lg-2 hero-img">
+            <img src="static/img/hero.svg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -84,11 +79,11 @@
                 <div class="icon"><i class="icofont-computer"></i></div>
 
                 <h4 class="title">
-                  <a href="{{ url_for('connect_blockchain') }}">Connect to the blockchain</a>
+                  <a href="{{ url_for('connect_block') }}">Connect Node</a>
                 </h4>
                 
                 <p class="description">
-                  Get connected to the blockchain to start sharing files securely
+                  Get connected to the distributed system to start sharing files securely
                 </p>
               </div>
             </div>
@@ -128,7 +123,7 @@
 
           <div class="row">
             <div class="col-lg-6">
-              <img src="static/img/about.png" class="img-fluid" alt="">
+              <img src="static/img/hero1.svg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 content">
               <h3>About the Application</h3>
@@ -202,115 +197,8 @@
             </p>
           </div>
 
-            <h5><u><a href="#featured-services"> Click Here</a></u> to get started by sharing your first file.</h5>
-
         </div>
       </section><!-- End About Section -->
-
-      <!-- ======= Team Section ======= -->
-      <section id="team" class="team section-bg">
-        <div class="container">
-
-          <div class="section-title">
-            <span>Team</span>
-            <h2>Team</h2>
-          </div>
-
-          <div class="row">
-
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="member">
-                <img src="static/img/team/team-1.jpg" alt="">
-                <h4>Dr. Shamama Anwar</h4>
-                <span>Project Mentor</span>
-                <p>
-                  We would like to express our gratitude for Dr. Shamama.
-                  She cleared our doubts and helped us stay motivated throughout the project duration.
-                </p>
-                <!-- <div class="social">
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div> -->
-              </div>
-            </div>
-
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="member">
-                <img src="static/img/team/team-2.jpg" alt="">
-                <h4>Ruchika Tulsyan</h4>
-                <span>BIT Mesra Semester VIII Student</span>
-                <p>
-                Data Share aims to focus on the power of decentralization using a blockchain. Adjacent technologies such as IPFS when combined with blockchain create a next level advantage! 
-                </p>
-                <!-- <div class="social">
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div> -->
-              </div>
-            </div>
-
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="member">
-                <img src="static/img/team/team-3.jpg" height="310px" alt="">
-                <h4>Souvik Saha</h4>
-                <span>BIT Mesra Semester VIII Student</span>
-                <p>
-                  We hope to demonstrate the importance of blockchain through this project! This new emerging technology will revolutionize business processes in many industries.
-                </p>
-                <!-- <div class="social">
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div> -->
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section><!-- End Team Section -->
-
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container">
-
-          <div class="section-title">
-            <span>Contact</span>
-            <h2>Contact</h2>
-            <p>In case of any query or errors, contact us using the details mentioned below:</p>
-          </div>
-
-          <div class="row">
-
-            <div class="col-md-4"></div>
-
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="info">
-
-                <div class="email">
-                  <i class="icofont-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>be10090.16@bitmesra.ac.in</p>
-                </div>
-
-                <div class="phone">
-                  <i class="icofont-phone"></i>
-                  <h4>Call:</h4>
-                  <p>+91 9308079198</p>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-md-4"></div>
-
-        </div>
-      </section><!-- End Contact Section -->
 
     </main><!-- End #main -->
 

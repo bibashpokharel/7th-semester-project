@@ -183,7 +183,7 @@ def my_response(message):
     print(pickle.loads(message['data']))
     blockchain.nodes = pickle.loads(message['data'])
 
-@app.route('/connect_blockchain')
+@app.route('/connect_block')
 def connect_blockchain():
     global connection_status
     nodes = len(blockchain.nodes)
@@ -196,11 +196,11 @@ def connect_blockchain():
 
     is_chain_replaced = blockchain.replace_chain()
     connection_status = True
-    return render_template('connect_blockchain.html', messages = {'message1' : "Welcome to the services page",
+    return render_template('connect_block.html', messages = {'message1' : "Welcome to the services page",
                                                                   'message2' : "Congratulations , you are now connected to the blockchain.",
                                                                  } , chain = blockchain.chain, nodes = nodes)
 
-@app.route('/disconnect_blockchain')
+@app.route('/disconnect_block')
 def disconnect_blockchain():
     global connection_status
     connection_status = False

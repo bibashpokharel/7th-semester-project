@@ -28,7 +28,7 @@
 }
 
 .blockchain-services .icon i {
-  color: #16df7e;
+  color: #0f425c;
   font-size: 36px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .blockchain-services .icon-box:hover .title a {
-  color: #16df7e;
+  color: #0f425c;
 }
 
 .blockchain-services .description {
@@ -67,7 +67,7 @@
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #16df7e;
+  color: #0f425c;
   font-weight: 700;
 }
 
@@ -79,12 +79,11 @@
   font-weight: 600;
 }
 
-
 /*----------------------------------------------------------------
 # Design to show the message1 and message2
 ------------------------------------------------------------------*/
-.alert-custom{
-  background-color: #FFE6F5 !important;
+.alert-custom {
+  background-color: #ffe6f5 !important;
   color: black !important;
 }
 
@@ -99,11 +98,11 @@
   padding: 0px;
 }
 
-.card-body .prev-hash{
+.card-body .prev-hash {
   color: yellow !important;
 }
 
-.card .h4{
+.card .h4 {
   border: 1px;
   color: #008000;
 }

@@ -77,10 +77,10 @@ def upload():
 def download():
     return render_template('download.html' , message = "Welcome!")
 
-@app.route('/connect_blockchain')
+@app.route('/connect_block')
 def connect_blockchain():
     is_chain_replaced = blockchain.replace_chain()
-    return render_template('connect_blockchain.html', chain = blockchain.chain, nodes = len(blockchain.nodes))
+    return render_template('connect_block.html', chain = blockchain.chain, nodes = len(blockchain.nodes))
 
 @app.errorhandler(413)
 def entity_too_large(e):
