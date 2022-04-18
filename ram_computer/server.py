@@ -107,7 +107,7 @@ def add_file():
                 user_file.save(file_path)
                 append_file_extension(user_file, file_path)
                 sender = request.form['sender_name']
-                receiver = request.form['receiver_name']
+                receiver = "host"
                 file_key = request.form['file_key']
                 try:
                     hashed_output1 = hash_user_file(file_path, file_key)

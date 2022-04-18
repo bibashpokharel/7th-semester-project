@@ -129,15 +129,15 @@
               <h3>About the Application</h3>
               <p>
                 <h5>
-                  Data Share aims at creating a system where the users can share files securely using a blockchain. Each connected user stores the complete blockchain.
+                 Distributed Storage System is a system where user can store and share files securely. Each connected node stores entire files. 
                 </h5>
                 <br>
-                <h4>Why a Blockchain?</h4>
+                <h4>Why a Distributed Storage System?</h4>
                 <ul>
-                  <li>Decentralized environment </li>
-                  <li>Supply chain data transparency</li>
-                  <li>Secure data ledgers due to the sophisticated encryption mecahnisms</li>
-                  <li>Data stored on the blockchain can't be deleted or tampered with</li>
+                  <li>Distributed environment </li>
+                  <li>Uninterrupted data storage</li>
+                  <li>Cost efficiency, secure and reliable</li>
+                  <li>Data stored on the system cannot be deleted or tampered with</li>
                 </ul>
               </p>
             </div>
@@ -148,22 +148,22 @@
                   Apart from the blockchain, Data Share also uses the following technologies:
               </h4>
               <ul> 
-                <li><h5>IPFS</h5>
+                <li><h5>Kademlia Algorithm</h5>
                   <ul>
                     <li>
-                      IPFS is a peer-to-peer protocol where each node stores a collection of hashed files.
+                     It is a way for millions of computers to self-organize into a network, communicate with other computers on the network, and share resources (e.g. files, blobs, objects) between computers, all without a central registry or lookup run by a single person or company.
                     </li>
                     <li>
-                      Since the blockchain is stored on all the nodes in the network, an increase in the number of files shared, increases the size of the blockchain, making it too heavy.
+                      It maintain the dynamic hash table.
                     </li>
                     <li>
-                      Here comes the role of IPFS. When we upload a file to the IPFS network, it uses SHA256 hashing encryption to generate a unique hash of the file based on the file content.
+                     Dynamic hash table includes the entry of K-Bucket which contains IP address, port, and NodeID for peer participants in the system.
                     </li>
                     <li>
-                      The file gets securely stored on the IPFS network and can be accessed easily using the generated hash.
+                      Resource is located by maping the key
                     </li>
                     <li>
-                      Instead of storing the whole file on the blockchain, we store only the file hash, thereby making the blockchain light and more secure. 
+                      Uses XOR routing inorder to locate the resource based on the key provided
                     </li>
                   </ul>
                 </li>
@@ -180,7 +180,7 @@
                       A key can be anything which the sender wishes to use as his/her password for the file. The sender shares this key with only those people who he/she trusts for the purpose of receiving the file.  
                     </li>
                     <li>
-                      To access the file, the recipient needs both the file hash and the key. The key can be shared by the sender using any mode of communication and the file hash gets communicated through the blockchain or the sender.
+                      To access the file, the recipient needs both the file hash and the key. The key can be shared by the sender using any mode of communication and the file hash gets communicated through the system or the sender.
                     </li>
                   </ul>
                 </li>
@@ -188,7 +188,7 @@
                 <li><h5>Socket Programming</h5>
                   <ul>
                     <li>
-                      Using Socket Programming, the blockchain network is set up such that only the people on the blockchain network can view the complete blockchain.
+                      Using Socket Programming, the distributed network is set up such that only the people on the distributed network can view the complete distributed.
                     </li>
                   </ul>
                 </li>
