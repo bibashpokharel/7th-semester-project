@@ -1,17 +1,16 @@
 
-main_server/__pycache__
-client_server_1/__pycache__
-main_server/.DS_Store
-client_server_1/.DS_Store
+initializer_computer/__pycache__
+ram_computer/__pycache__
+shyam_computer/__pycache__
+initializer_server/.DS_Store
+shyam_computer/.DS_Store
 .DS_Store
-main_server/uploads
-main_server/downloads
-client_server_1/uploads
-client_server_1/downloads
-client_server_2/uploads
-client_server_2/downloads
-client_server_3/uploads
-client_server_3/downloads
+initializer_computer/uploads
+initializer_computer/downloads
+ram_computer/uploads
+ram_computer/downloads
+shyam_computer/uploads
+shyam_computer/downloads
 
 blockChain/
 storage/
